@@ -1,4 +1,11 @@
 import pandas as pd
+
+import os
+import django
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')
+django.setup()
+
 from bot_api.models import Road, City
 from loguru import logger
 import math
